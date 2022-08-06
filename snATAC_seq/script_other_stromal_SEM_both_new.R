@@ -17,7 +17,7 @@ print("Generating barplot with SEM for stromal cells...")
 }
 
 scATAC_seq_expt = readRDS(args[1])
-#scATAC_seq_expt <- readRDS("/projects/anczukow-lab/neerja_projects/Integrate_expt1_expt2_only/Analysis_PC_10_mt10/RDS_files/seuratObject_rename_ident.rds")
+#scATAC_seq_expt <- readRDS("/seuratObject_rename_ident.rds")
 cells_per_ident_per_cluster_reps =table(scATAC_seq_expt$predicted.id, scATAC_seq_expt@meta.data$dataset)
 write.table(cells_per_ident_per_cluster_reps, "./Barplots_cell_composition/Table_cells_per_replicate_per_cluster.txt", sep="\t", quote=FALSE)
 

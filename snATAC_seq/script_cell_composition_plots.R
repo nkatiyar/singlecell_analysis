@@ -213,7 +213,7 @@ args <- commandArgs(TRUE)
 if (length(args) < 1) {
   stop("Seurat object with cluster annotations must be supplied (input file).n", call.=FALSE)
 } else
-#paste("/projects/anczukow-lab/neerja_projects/Integrate_expt1_expt2_only_new/RDS_files/seuratObject_rename_ident.rds")
+#paste("/RDS_files/seuratObject_rename_ident.rds")
 {
 print("Generating cell composition barplots")
 }

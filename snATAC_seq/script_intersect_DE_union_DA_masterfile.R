@@ -21,7 +21,7 @@ dir.create(dir_name)
 celltype_ATAC <- paste0(celltype, "_DA_DESeq2.txt")
 
 #Read the ATACbulk DE genes data...
-path_ATAC <- "/projects/anczukow-lab/neerja_projects/New_scRNA_ATAC_seq_analysis_PC10/scATAC_new/pseudobulk_DA_analysis/DA_analysis/Results/DESeq2_files/"
+path_ATAC <- "/scATAC_new/pseudobulk_DA_analysis/DA_analysis/Results/DESeq2_files/"
 celltype_ATAC_path <- paste0(path_ATAC,celltype_ATAC)
 
 celltype_ATACbulk_all_log2FC0 <- read.delim(celltype_ATAC_path, sep="\t", header=T)
@@ -29,7 +29,7 @@ celltype_ATACbulk_all_log2FC0 <- read.delim(celltype_ATAC_path, sep="\t", header
 celltype_ATACbulk_all_log2FC0_filtered <- celltype_ATACbulk_all_log2FC0 %>% filter(M18_M3.logFC > 1)
 
 #Read the single cell DE genes data...
-path_DE_union <- "/projects/anczukow-lab/neerja_projects/New_scRNA_ATAC_seq_analysis_PC10/scRNAseq/Overlap_analysis/Intersect_and_union_DE_singlecell_pseudobulk_DESeq2/No_filter/"
+path_DE_union <- "/scRNAseq/Overlap_analysis/Intersect_and_union_DE_singlecell_pseudobulk_DESeq2/No_filter/"
 
 Celltype_DE_union_all <- paste0(celltype, "_dir_no_filter/", celltype, "_singlecell_vs_pseudobulk_merged_union_all_log2FC0.txt")
 celltype_DE_union_file_all <- paste0(path_DE_union, Celltype_DE_union_all)
@@ -51,7 +51,7 @@ write.table(union_file_all, celltype_merged_union_all, sep="\t", quote=F)
 
 ###########################################
 
-#file_obj <- readRDS("/projects/anczukow-lab/neerja_projects/New_scRNA_ATAC_seq_analysis_PC10/scRNAseq/RDS_files/seuratObject_rename_ident_May26_2021.rds")
+#file_obj <- readRDS("/scRNAseq/RDS_files/seuratObject_rename_ident_May26_2021.rds")
 
 #############--------------------------------########################
 args <- commandArgs(TRUE)

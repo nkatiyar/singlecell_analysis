@@ -943,7 +943,7 @@ saveRDS(combined_tmp_expt, "scRNA_ATAC_combined_nondoublets_before_transfer.rds"
 
 combined_tmp_expt <- readRDS("scRNA_ATAC_combined_nondoublets_before_transfer.rds")
 
-mouse_rna <- readRDS("/projects/anczukow-lab/neerja_projects/New_scRNA_ATAC_seq_analysis_PC10/scRNAseq/RDS_files/seuratObject_rename_ident_May26_2021.rds")
+mouse_rna <- readRDS("/scRNAseq/RDS_files/seuratObject_rename_ident_May26_2021.rds")
 
 transfer.anchors <- FindTransferAnchors(
   reference = mouse_rna,

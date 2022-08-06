@@ -17,7 +17,7 @@ celltype <- gsub("-", "_", celltype)
 celltype <- gsub("/", "_or_", celltype)
 
 #Read the ATACbulk DE genes data...
-path_ATAC <- "/projects/anczukow-lab/neerja_projects/New_scRNA_ATAC_seq_analysis_PC10/scATAC_new/pseudobulk_DA_analysis/DA_analysis/Results/DESeq2_files/"
+path_ATAC <- "/pseudobulk_DA_analysis/DA_analysis/Results/DESeq2_files/"
 celltype_ATAC <- paste0(celltype, "_DA_DESeq2.txt")
 
 celltype_ATAC_path <- paste0(path_ATAC,celltype_ATAC)
@@ -98,7 +98,7 @@ return(df_comb)
 }
 
 ###########################################
-#mydata <- readRDS("/projects/anczukow-lab/neerja_projects/New_scRNA_ATAC_seq_analysis_PC10/scRNAseq/RDS_files/seuratObject_rename_ident_May26_2021.rds")
+#mydata <- readRDS("/scRNAseq/RDS_files/seuratObject_rename_ident_May26_2021.rds")
 
 #############--------------------------------########################
 args <- commandArgs(TRUE)

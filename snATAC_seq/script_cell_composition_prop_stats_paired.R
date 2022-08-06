@@ -8,7 +8,7 @@ library(dplyr)
 
 ###############################################################
 
-scATAC_seq_expt <- readRDS("/projects/anczukow-lab/neerja_projects/New_scRNA_ATAC_seq_analysis_PC10/scATAC_new/RDS_files/scRNA_ATAC_combined_nondoublets_June22_2021.rds")
+scATAC_seq_expt <- readRDS("/scATAC_new/RDS_files/scRNA_ATAC_combined_nondoublets_June22_2021.rds")
 
 	Idents(scATAC_seq_expt) <- scATAC_seq_expt$predicted.id
 	scATAC_seq_expt_epithelial_only <- subset(scATAC_seq_expt, idents = c("Luminal-AV", "Luminal-HS", "Myoepithelial"))
