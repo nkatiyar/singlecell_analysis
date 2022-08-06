@@ -95,9 +95,7 @@ if (length(args) < 3) {
 {
 print("Generating Violin plots for module scoring...")
 }
-#mydata_new = readRDS("/projects/anczukow-lab/neerja_projects/Integrate_expt1_expt2_only/Analysis_PC_10_mt10/RDS_files/seuratObject_rename_ident.rds")
 
-#mydata_new = readRDS("/projects/anczukow-lab/neerja_projects/New_scRNA_ATAC_seq_analysis_PC10/scRNAseq/RDS_files/seuratObject_rename_ident_May26_2021.rds")
 #module_type = "Inflammation_Nathan_mouse"
 #module_filename = "./Score_gene_plots/Inflammation_Nathan_mouse.txt"
 

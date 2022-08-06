@@ -3,7 +3,7 @@ library(Seurat)
 library(ggplot2)
 
 #Script to generate DotPlots for marker genes.
-#mydata_new = readRDS("/projects/anczukow-lab/neerja_projects/Integrate_expt1_expt2_only/Analysis_PC_10_mt10/RDS_files/seuratObject_rename_ident.rds")
+#mydata_new = readRDS("seuratObject_rename_ident.rds")
 
 dir.create("../DotPlots")
 gen_dotplots <- function(mydata_new){
@@ -94,7 +94,7 @@ args <- commandArgs(TRUE)
 if (length(args) < 1) {
   stop("At least one argument must be supplied (input file).n", call.=FALSE)
 } else
-#paste("/projects/anczukow-lab/neerja_projects/Integrate_expt1_expt2_only/Analysis_PC_10_mt10/RDS_files/seuratObject_rename_ident.rds")
+#paste("seuratObject_rename_ident.rds")
 {
 print("Generating dotplots using marker genes...")
 }

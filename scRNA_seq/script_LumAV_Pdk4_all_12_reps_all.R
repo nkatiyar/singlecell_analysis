@@ -95,7 +95,7 @@ if (length(args) < 3) {
 print("Generating Violinplots and Piecharts for gene expression across replicates...")
 }
 
-#args[1] = "/projects/anczukow-lab/neerja_projects/Integrate_expt1_expt2_only/Analysis_PC_10_mt10/RDS_files/seuratObject_rename_ident.rds"
+#args[1] = "seuratObject_rename_ident.rds"
 #args[2] = "Pdk4"
 #args[3] = "Luminal-AV"
 

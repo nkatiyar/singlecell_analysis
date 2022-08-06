@@ -61,7 +61,6 @@ print("Running differential analysis...")
 }
 
 mydata = readRDS(args[1])
-#mydata = readRDS("/projects/anczukow-lab/neerja_projects/Integrate_expt1_expt2_only/Analysis_PC_10_mt10/RDS_files/seuratObject_rename_ident.rds")
 mydata$celltype.stim <- paste(Idents(mydata), mydata$orig.ident, sep = "_")
 mydata$celltype <- Idents(mydata)
 Idents(mydata) <- "celltype.stim"

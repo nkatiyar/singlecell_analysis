@@ -2,7 +2,7 @@
 
 library(ggplot2)
 library(dplyr)
-data_enrich <- read.table("/projects/anczukow-lab/neerja_projects/New_scRNA_ATAC_seq_analysis_PC10/scRNAseq/Scripts/Enrichment_analysis/HPEA/All_samples_lab_meeting_reanalysis/Fibroblasts_enrich_HPEA_cancer_hallmarks_sig_only.txt", sep="\t", header=T)
+data_enrich <- read.table("Fibroblasts_enrich_HPEA_cancer_hallmarks_sig_only.txt", sep="\t", header=T)
 rownames(data_enrich) <- NULL
 
 data_enrich$score = -log(data_enrich$adj.p)
